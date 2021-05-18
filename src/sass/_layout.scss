@@ -1,9 +1,110 @@
 // Global
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
+body{
+    background-color: #ebe9e6;
 }
-// Side bar
-.side-bar{
-    width: 200px;
+.container {
+  max-width: 2240px;
+  margin-top: 90px;
+  margin-left: 315px;
+  
+}
+body{
+    margin:0;
+    padding:0;
+  }
+// Navigator
+  header.top{
+    width:100%;
+    background:white;
+    color:gray;
+    position:fixed;
+    top:0;
+    left:0;
+    text-align:center;
+    z-index:10;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    ul{
+        display: flex;
+        justify-content:flex-end;
+        flex-direction: row;
+        margin: 0;
+    }
+    li{
+        padding: 20px;
+        border-right: 1px solid #ebe9e6;
+        list-style-type: none;
+    }
+    li:hover{
+        cursor: pointer;
+        background-color: lightgray;
+    }
+    img{
+        height: 16px;
+        width: 16px;
+    }
+  }
+  
+  header.sidebar{
+    width:300px;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:black;
+    z-index:20;
+    text-align:center;
+    color: #ebe9e6;
+    margin-top: 10px;
+    margin-left: 10px;
+    h2{
+        text-align: left;
+        margin-left: 37px;
+    }
+    h2 i{
+        padding-left: 30px;
+    }
+    h2 i:hover{
+        cursor: pointer;
+    }
+    img{
+        height: 16px;
+        width: 16px;
+        margin-right: 20px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        border-bottom: solid 0.5px #ebe9e6;
+    }
+    li{
+        position: relative;
+        list-style-type: none;
+        color: #ebe9e6;
+        padding-bottom: 25px;
+        width: 100%;
+        text-align: left;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 10%;
+    }
+    li:hover{
+        border-left: 2px solid darkorange;
+        background-color: #4a4946;
+        cursor: pointer;
+        
+    }
+    
+  }
+// Section
+.content{
+    background-color: white;
+    margin-top: 10px;
+}
+h3{
+    border-bottom: 1px solid #4a4946;
 }
