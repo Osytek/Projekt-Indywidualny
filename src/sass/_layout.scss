@@ -282,7 +282,7 @@ h4{
 }
 
 // Media
-@media (max-width: 767px) {
+@media (max-width: 1885px) {
     // Global
     .container{
         margin-top: 10px;
@@ -367,9 +367,19 @@ h4{
     }
     .links 
         a{
-            left:120px;
+            left:100px;
         }
         li{
-            font-size: 14px;
+            font-size: 12px;
         }
+}
+@media (max-width: 360px) {
+    .charts-image{
+        img{
+            transform: scale(0.5);
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1885px){
+
 }
