@@ -1,11 +1,13 @@
 // Global
 body{
     background-color: #ebe9e6;
+    font-family: $paragraph-font;
 }
 .container {
-  max-width: 2240px;
+  max-width: 1240px;
+  margin: 0 auto;
   margin-top: 90px;
-  margin-left: 315px;
+  
   
 }
 body{
@@ -13,8 +15,11 @@ body{
     padding:0;
   }
 // Navigator
+  .hamburger{
+      display: none;
+  }
   header.top{
-    width:100%;
+    width:99%;
     background:white;
     color:gray;
     position:fixed;
@@ -24,7 +29,6 @@ body{
     z-index:10;
     margin-top: 10px;
     margin-left: 10px;
-    margin-right: 10px;
     
     ul{
         display: flex;
@@ -59,9 +63,17 @@ body{
     color: #ebe9e6;
     margin-top: 10px;
     margin-left: 10px;
+    .fa-bars{
+        display: none;
+    }
+    .disable{
+        display: none;
+    }
     h2{
         text-align: left;
         margin-left: 37px;
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
     }
     h2 i{
         padding-left: 30px;
@@ -69,10 +81,11 @@ body{
     h2 i:hover{
         cursor: pointer;
     }
-    img{
-        height: 16px;
-        width: 16px;
+    i{
         margin-right: 20px;
+        text-align: left;
+        width: 20px;
+        height: 20px;
     }
     ul{
         display: flex;
@@ -84,16 +97,16 @@ body{
     li{
         position: relative;
         list-style-type: none;
-        color: #ebe9e6;
+        color: lightgrey;
         padding-bottom: 25px;
         width: 100%;
         text-align: left;
         height: 50px;
         line-height: 50px;
-        padding-left: 10%;
+        padding-left: 11%;
     }
     li:hover{
-        border-left: 2px solid darkorange;
+        border-left: 4px solid darkorange;
         background-color: #4a4946;
         cursor: pointer;
         
@@ -105,6 +118,258 @@ body{
     background-color: white;
     margin-top: 10px;
 }
-h3{
-    border-bottom: 1px solid #4a4946;
+h4{
+    border-bottom: 1px solid lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: grey;
+}
+.general-top{
+    ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid lightgrey;
+    }
+    li{
+        list-style: none;
+        padding: 10px 30px;
+        border-top: solid 1px lightgray;
+        border-bottom: solid 1px lightgrey;
+        border-left: solid 1px lightgrey;
+        border-radius: 3px 0 0 3px;
+    }
+    .second-li{
+        border-right: 1px solid lightgray;
+        border-radius: 0 3px 3px 0;
+    }
+    .fa-calendar-alt{
+        color: lightgray;
+        margin-left: 20px;
+        margin-right: -20px;
+    }
+    button{
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: darkorange;
+        color: white;
+        border-radius: 3px;
+    }
+}
+.general-bottom{
+    display: flex;
+    justify-content: center;
+    
+    li{
+        list-style: none;
+        border-bottom: 1px solid lightgray;
+        height: 40px;
+        width: 300px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        color: grey;
+    }
+    span{
+        position: absolute;
+        right: 0;
+        color: black;
+    }
+}
+.earning-charts{
+    .earning-charts-container{
+        display: flex;
+        justify-content: center;
+    }
+    .earning-charts-title{
+        list-style: none;
+        color: gray;
+        margin-top: 80px;
+        padding-right: 540px;
+    }
+    .earning-charts-content{
+        display: flex;
+        justify-content: center;
+        li{
+            margin-right: 60px;
+            list-style: none;
+            padding: 10px 20px;
+        }
+        li:hover{
+            background-color: #ebe9e6;
+            border-radius: 3px;
+        }
+        .fa-circle{
+            margin-right: 10px;
+        }
+        .first{
+            color: lightblue;
+        }
+        .second{
+            color: orange;
+        }
+        .third{
+            color: green;
+        }
+        
+    }
+    .charts-image{
+        display: flex;
+        justify-content: center;
+        img{
+            margin-top: 50px;
+            width: 600px;
+            height: 200px;
+            padding-left: 40px;
+        }
+    }
+    
+}
+.links{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    h4{
+        border-bottom: 1px solid lightgrey;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        color: grey;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    li{
+        list-style: none;
+        width: 560px;
+        border-top: 1px solid #ebe9e6;
+        padding: 20px 10px 20px 10px;
+        position: relative;
+    }
+    li:hover{
+        background-color: #ebe9e6;
+        border-radius: 3px;
+    }
+    a{
+        text-decoration: none;
+        position: absolute;
+        left: 250px;
+        color: lightblue;
+        
+    }
+    .button-container{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        background-color: darkorange;
+        border: none;
+        padding: 10px 15px 10px 15px;
+        border-radius: 3px;
+        color: white;
+        font-family: Arial;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+// Media
+@media (max-width: 767px) {
+    // Global
+    .container{
+        margin-top: 10px;
+    }
+    // Sidebar
+    .fa-bars{
+        display: inline !important;
+    }
+    .disable{
+        display: block !important;
+    }
+    .sidebar{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    // Navigation
+    header.top{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        i{
+            font-size: 50px;
+            margin-top: 30px;
+        }
+        i:hover{
+            cursor: pointer;
+        }
+    }
+    // Section
+    .title-container{
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        h4{
+            border: none;
+        }
+    }
+    .general-top{
+        
+        ul{
+            padding-left: 0;
+        }
+        li{
+            padding-bottom: 0;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .fa-calendar-alt{
+            margin: 0 0;
+        }
+    }
+    .general-bottom{
+        ul{
+            padding-left: 10px;
+        }
+        li{
+            width:130px;
+        }
+    }
+    .earning-charts{
+        ul{
+            padding-left: 0;
+        }
+        .earning-charts-content{
+            li{
+                margin-right: 0px;
+            }
+        }
+        .earning-charts-title{
+            padding-right: 0 !important;
+        }
+    }
+    .charts-image{
+        img{
+            transform: scale(0.6);
+            padding-left: 0 !important;
+        }
+    }
+    .links 
+        a{
+            left:120px;
+        }
+        li{
+            font-size: 14px;
+        }
 }
