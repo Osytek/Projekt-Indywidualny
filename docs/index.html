@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tytuł strony...</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="vendor/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/style.css">
+     </head>
+     <body>
+      <div class="hamburger">
+         <i class="fas fa-bars"></i>
+      </div>
+      <header class="top">
+         <ul>
+            <li>
+               <img src="images/icons/wallet.svg" alt="wallet">
+               $1,500.00
+               <img src="images/icons/arrow-down-small.svg" alt="arrow-down">
+            </li>
+            <li>
+               <img src="images/icons/notification.svg" alt="notification">
+            </li>
+            <li>
+               <img src="images/icons/profile.svg" alt="profile">
+               Leonardo Dicaprio
+            </li>
+            <li>
+               <img src="images/icons/quit.svg" alt="quit">
+            </li>
+         </ul>
+      </header>
+      <header class="sidebar">
+        <h2> Just do it <i class="fas fa-bars"></i></h2>
+        <ul class="just-do-it">
+           <li><i class="far fa-star"></i>General</li>
+           <li><i class="fas fa-info"></i>Details</li>
+           <li><i class="fas fa-link"></i>Links</li>
+           <li><i class="fas fa-align-justify"></i>Banners</li>
+           <li><i class="fas fa-users"></i>Personal data</li>
+           <li><i class="fas fa-money-check-alt"></i>Payout</li>
+           <li><i class="fas fa-clone"></i>Postback</li>
+           <li class="disable"><i class="fas fa-wallet"></i>$1,500.00</li>
+           <li class="disable"><i class="far fa-bell"></i>Notifications</li>
+           <li class="disable"><i class="fas fa-user-alt"></i>Leonardo Dicaprio</li>
+           <li class="disable"><i class="fas fa-sign-out-alt"></i>Logout</li>
+        </ul>
+        YOUR MANAGER
+      </header>
+      <div class="container">
+         <section class="content">
+            <div class="title-container">
+               <h4>GENERAL STATISTIC</h4>
+            </div>   
+            <div class="general-statistic">
+               <div class="general-top">
+                  <ul>
+                     <li>16.05.2016</li>
+                     <li class="second-li">16.05.2016 <i class="far fa-calendar-alt"></i></li>
+                     <li class="button"><button><i class="fas fa-redo-alt"></i></button></li>
+                  </ul>
+               </div>
+               <div class="general-bottom">
+                  <ul>
+                     <li>Visit Signups <span>124</span></li>
+                     <li>FTD <span>445</span></li>
+                  </ul>
+                  <ul>
+                     <li>Net deposit <span>564</span></li>
+                     <li>Turn over <span>432</span></li>
+                  </ul>
+               </div>
+                  <div class="earning-charts">
+                     <ul class="earning-charts-container">
+                        <li class="earning-charts-title">Earning charts</li>
+                     </ul>
+                     <div class="charts-image">   
+                        <canvas id="myChart"></canvas>
+                     </div>
+                  </div>   
+            </div>
+         </section>
+         <section class="content">
+            <div class="links">
+               <h4>Links</h4>
+               <div class="button-container">
+                  <button><i class="fas fa-plus"></i> add new</button>
+               </div>
+               <ul>
+                  <li>Home page<a href="http://www.homepage.com">http://www.homepage.com</a></li>
+                  <li>Currently offer<a href="http://www.currently.com">http://www.currently.com</a></li>
+                  <li>Blurpix<a href="http://www.blurpix.com">http://www.blurpix.com</a></li>
+                  <li>Your site<a href="http://www.yoursite.com">http://www.yoursite.com</a></li>
+                  <li>Google<a href="http://www.google.com">http://www.google.com</a></li>
+                  <li>Facebook<a href="http://www.facebook.com">http://www.facebook.com</a></li>
+                  <li>Dashboard<a href="http://www.dashboard.com">http://www.dashboard.com</a></li>
+                  <li>Blurax<a href="http://www.blurax.com">http://www.blurax.com</a></li>
+                  <li>Piece of Wine<a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></li>
+                  <li>Twitter<a href="http://www.twitter.com">http://www.twitter.com</a></li>
+               </ul>
+               <div class="button-container">
+                  <button><i class="fas fa-plus"></i> add new</button>
+               </div>
+            </div>
+         </section>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script src="js/script.js"></script>
+     </body>
+</html>
